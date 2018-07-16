@@ -1,3 +1,10 @@
+.vertical-positioning-wrapper {
+    min-height: 100vh;
+    -webkit-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    transform: translateY(40%)
+}
+
 input::-moz-placeholder,input::-ms-input-placeholder,input::-webkit-input-placeholder {
     text-align: center
 }
