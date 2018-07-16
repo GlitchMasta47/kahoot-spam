@@ -1,0 +1,36 @@
+body {
+    animation-name: animateBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    margin: 0
+}
+
+@keyframes animateBackground {
+    0%,100% {
+        background-color: #45a3e5
+    }
+
+    14% {
+        background-color: #3cc
+    }
+
+    28% {
+        background-color: #66bf39
+    }
+
+    42% {
+        background-color: #ffa602
+    }
+
+    56% {
+        background-color: #eb670f
+    }
+
+    71% {
+        background-color: #f35
+    }
+
+    86% {
+        background-color: #864cbf
+    }
+}
