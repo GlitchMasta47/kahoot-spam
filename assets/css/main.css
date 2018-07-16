@@ -1,3 +1,37 @@
+@media all and (device-width: 48rem) and (device-height:64rem) and (orientation:portrait) {
+    .vertical-positioning-wrapper {
+        min-height:64rem
+    }
+}
+
+@media all and (device-width: 48rem) and (device-height:64rem) and (orientation:landscape) {
+    .vertical-positioning-wrapper {
+        min-height:48rem
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .vertical-positioning-wrapper {
+        min-height:31.25rem
+    }
+}
+
+.vertical-positioning-wrapper .vertical-positioning-40 {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.vertical-alignment-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%
+}
+
 .vertical-positioning-wrapper {
     min-height: 100vh;
     -webkit-transform: translateY(40%);
@@ -32,4 +66,37 @@ input::-moz-placeholder,input::-ms-input-placeholder,input::-webkit-input-placeh
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto
+}
+
+input {
+    box-shadow: none
+}
+
+input.username {
+    border: .125rem solid #ccc;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input.username:-moz-placeholder {
+    color: #b2b2b2
+}
+
+input.username:-ms-input-placeholder {
+    color: #b2b2b2
+}
+
+input.username::-webkit-input-placeholder {
+    color: #b2b2b2
+}
+
+input.username.placeholder {
+    color: #b2b2b2!important
+}
+
+input.username:focus {
+    box-shadow: none;
+    border: .125rem solid #333
 }
