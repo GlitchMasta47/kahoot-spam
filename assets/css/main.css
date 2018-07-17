@@ -100,3 +100,12 @@ input.username:focus {
     box-shadow: none;
     border: .125rem solid #333
 }
+
+.logo-container {
+    padding-top: 4.25rem;
+    padding-bottom: 1.5rem;
+}
+
+form {
+    margin: 0 0 20px;
+}
